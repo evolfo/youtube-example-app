@@ -6,7 +6,8 @@ class SearchBar extends React.Component {
       <div className="sixteen wide column">
         <div className="ui segment secondary">
           <div className="ui huge fluid input">
-            <input type="text" placeholder="Search Youtube..."/>
+            <input name="searchText" onChange={this.props.updateSearchTerm} type="text" placeholder="Search Youtube..."/>
+            <button onClick={this.props.processSearch}>Search YouTube</button>
           </div>
         </div>
       </div>
